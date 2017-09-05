@@ -1,5 +1,4 @@
-<!DOCTYPE HTML>
-<html>
+<html style="background-image: url('img/home-bw.jpg');">
 
     <head>
 
@@ -8,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
 
+
     </head>
 
     <body>
@@ -15,6 +15,15 @@
         <div id="container" class="home-container">
             <h1>Gavin McGruddy</h1>
             <h2>Portfolio</h2>
+
+            <div class="content-container" id="home-content">
+                <div id="home-img-container">
+                    <img id="monkey-1" class="monkeys" src="img/monkeys.jpg" />
+                    <img id="monkey-2" class="monkeys" src="img/monkeys-bw.jpg" />
+               </div>
+
+            </div>
+
             <div class="overlay-navigation">
                 <nav role="navigation">
                     <ul>
@@ -41,5 +50,12 @@
     <script type="text/javascript" src="js/velocity.min.js"></script>
     <script type="text/javascript" src="js/velocity.ui.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/tilt.jquery.js"></script>
+
+    <script type="text/javascript">
+        $('.js-tilt').tilt({
+            scale: 1.2
+        })
+    </script>
 
 </html>
